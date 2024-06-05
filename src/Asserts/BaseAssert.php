@@ -72,4 +72,9 @@ abstract class BaseAssert
 
         throw new BadMethodCallException(sprintf('Call to undefined method %s::%s()', static::class, $method));
     }
+
+    protected function getParser(): DomParser
+    {
+        return $this->parser;
+    }
 }
